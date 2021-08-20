@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess profit or loss?</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header">Guess profit or loss</h1>
+      <p class="description">
+        This app tells you about how much profit or loss you are making.
+      </p>
+      <div class="c">
+
+          <div class="c1">
+              
+              <label for="costprice">Cost Price of the stock</label>
+              <input
+                type="number"
+                id="costPrice"
+                placeholder="Enter Cost price of the stock"
+              />
+          </div>
+          <div class="c2">
+    
+              <label for="noOfStocks">No of stocks</label>
+              <input
+                type="number"
+                id="noOfStocks"
+                placeholder="Enter no of stocks that you bought"
+              />
+          </div>
+          <div class="c3">
+              
+              <label for="sellingPrice">Selling price of the stock</label>
+              <input
+                type="number"
+                id="sellingPrice"
+                placeholder="Enter selling price of the stock"
+              />
+          </div>
+      </div>
+      <button class="calculate">Calculate</button>
+      <div class="result"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

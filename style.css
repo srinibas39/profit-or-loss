@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+    outline: none;
+  }
+  .container {
+    height: 100vh;
+  
+    width: 50vw;
+  
+    background-color: #6b7280;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: white;
+  }
+  .description {
+    padding: 1rem 1rem;
+    color: white;
+    text-align: center;
+  }
+  #costPrice {
+    width: 13rem;
+    border-radius: 5px;
+    margin: 1rem 1rem;
+    /* color: black; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-content: center; */
+    
+  }
+  #noOfStocks {
+    /* margin: 2rem; */
+    width: 13rem;
+    border-radius: 5px;
+    margin: 1rem 1rem;
+    color: black;
+  }
+  #sellingPrice {
+    /* margin: 2rem; */
+    width: 13rem;
+    border-radius: 5px;
+    margin: 1rem 1rem;
+    color: black;
+  }
+  label {
+    color: white;
+    display: flex;
+    padding: 1rem 1rem; /* justify-content: center; */ /* align-content: center; */
+  }
+  .calculate {
+    position: absolute;
+    top: 25rem;
+    padding: 10px;
+    margin: 17px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .result {
+    height: 100vh;
+    width: 50vw;
+    border: 1px solid;
+    position: absolute;
+    left: 50vw;
+    top: 0rem;
+    background-color: #e5e7eb;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .c1 {
+    /* background-color: red; */
+  
+    display: flex;
+  }
+  .c2 {
+    display: flex;
+  }
+  .c3 {
+    display: flex;
+  }
+  .c {
+    display: flex;
+  
+    flex-direction: column;
+  
+    justify-content: space-between;
+  
+    /* align-content: center; */
+  }
+  
