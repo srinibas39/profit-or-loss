@@ -18,12 +18,8 @@
      Tell the Profit / Loss, the user's making -
  </p>
  <p>
-
      In Percentage
  </p>
- <p>
-     In Absolute
-</p>
 <h2>
 
     Tech Stack -
