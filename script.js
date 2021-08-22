@@ -4,13 +4,13 @@ let sellingPrice=document.querySelector("#sellingPrice");
 let noOfStocks=document.querySelector("#noOfStocks");
 let result=document.querySelector(".result");
 calculate.addEventListener("click",function(e){
-   if(sellingPrice.value>costPrice.value){
+   if(sellingPrice.value*noOfStocks.value>costPrice.value*noOfStocks.value){
        let profit=((sellingPrice.value-costPrice.value)*noOfStocks.value).toFixed(2);
        let profitPercentage=((profit/costPrice.value)*100).toFixed(2);
        result.innerText=`Hurrah,you have a profit of ${profit} and  profit% of ${profitPercentage}`
        result.style.color="#059669";
    }
-   else if(sellingPrice.value<costPrice.value){
+   else if(sellingPrice.value*noOfStocks.value<costPrice.value*noOfStocks.value){
        let loss=((costPrice.value-sellingPrice.value)*noOfStocks.value).toFixed(2);
        let lossPercentage=((loss/costPrice.value)*100).toFixed(2);
        result.innerText=`Sorry,you have a loss of ${loss} and  loss% of ${lossPercentage}`;
