@@ -10,13 +10,13 @@ calculate.addEventListener("click",function(e){
 
         if(sellingPrice.value*noOfStocks.value>costPrice.value*noOfStocks.value){
             let profit=((sellingPrice.value-costPrice.value)*noOfStocks.value).toFixed(2);
-            let profitPercentage=Math.round((profit/costPrice.value)*100);
+            let profitPercentage=Math.round((profit/(costPrice.value*noOfStocks.value))*100);
             result.innerText=`Hurrah,you have a profit of ${profit} and  profit% of ${profitPercentage}`
             result.style.color="#059669";
         }
         else if(sellingPrice.value*noOfStocks.value<costPrice.value*noOfStocks.value){
             let loss=((costPrice.value-sellingPrice.value)*noOfStocks.value).toFixed(2);
-            let lossPercentage=Math.round((loss/costPrice.value)*100);
+            let lossPercentage=Math.round((loss/(costPrice.value*noOfStocks.value))*100);
             result.innerText=`Sorry,you have a loss of ${loss} and  loss% of ${lossPercentage}`;
             result.style.color="#EF4444";
          }
